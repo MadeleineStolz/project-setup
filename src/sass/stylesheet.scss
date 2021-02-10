@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: gray;
+    text-align: center;
+    min-height: 5em;
+    flex: 1;
+
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: black;
+        font-family: "Times New Roman" 'Times New Roman', Times, serif;
+        background-color: gray;
+        text-align: center;
+        line-height: 0,5;
+    }
+    h2 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 36px;
+        font-weight: 400;
+        font-style:normal;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    
+    h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        font-weight: 200;
+        font-style:normal;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }   
+    h4{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        font-weight: 200;
+        font-style:normal;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    //Header//
+    .m-header {
+        .m-header_logo {
+            display: flex;
+            background-color: gray;
+            position: absolute;
+            left: 0;
+            padding: 12px;
+            font-weight: normal;
+            text-align: center;
+        }
+        .m-header-partial {
+            position: absolute;
+            left: 0;
+            padding: 12px;
+            font-weight: normal;
+            text-align: left;
+        }
+        .m-header_navigation {
+            padding: 12px;
+            display: block;
+            font-weight: normal;
+            text-align: center;
+            flex-grow: 1;
+        }
+    }
+    //Body//
+    .m-body {
+        .m-about {
+            position: flex;
+            background-color: gray;
+            left: 0;
+            padding: 12px;
+            font-weight: normal;
+            text-align: left;
+        }
+        .m-work{
+            position: flex;
+            background-color: gray;
+            left: 0;
+            padding: 12px;
+            font-weight: normal;
+            text-align: left;
+        }
+        .m-contact {
+            position: flex;
+            background-color: gray;
+            left: 0;
+            padding: 12px;
+            font-weight: normal;
+            text-align: left;
+        }
+    }
+
+    //Footer// 
+    .m-footer {
+        display: flex;
+        text-align: center;
+        background-color: gray;
+        padding: 12px;
+    }
+    .m-footer_navigation {
+        padding: 12px;
+        display: block;
+        font-weight: normal;
+        text-align: center;
+        flex-grow: 1;
+    }
+        //Impressum//
+        .m-impressum {
+            display: flex;
+            min-height: 100vh;
+            margin: 0 auto;
+            flex-direction: row;
+            background-color: gray;
+            text-align: left;
+        }
+}

@@ -3,9 +3,76 @@
   <head>
     <meta charset="utf-8" />
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index.scss" />
   </head>
   <body>
     <h1>My Homepage</h1>
   </body>
+
+
+<header class=".m-header">
+  <div class=".m-header_logo">
+    <h1>
+        𝔪
+    </h1>
+  </div>
+</header>
+<div class="header-partial">
+  <h1>Hi! I am Madeleine. 
+      <p>Nice to meet you.</p>
+  </h1>
+</div>
+
+<nav class=".m-header_navigation">
+    <ul>
+        <li class= "active">
+            <a href="partials/about.html">about</a>
+        </li>
+      <li>
+          <a href="partials/work.html">work</a>
+      </li>
+      <li>
+          <a href="partials/contact.html">contact</a>
+      </li>
+      <li>
+          <label for "suche">search</label>
+          <input type= "search" id="suche" placeholder= "🔎">
+      </li>
+    </ul>
+</nav>
+
+<nav class=".m-body">
+  <h2>
+      Hi. Ich bin Madeleine.
+  </h2>
+  <h3>
+      Ich wurde am 23.02.2001 in Ratingen geboren und habe 2019 mein Abitur gemacht.
+      Jetzt bin ich 20 Jahre alt und studiere im ersten Semester an der Hochschule Düsseldorf.
+  </h3>
+</nav>
+
+<nav class=".m-footer_navigation">
+  <ul>
+       <li class= "active">
+              <a href="partials/impressum.html">Impressum</a>
+          </li>
+      <li>
+            <a href="partials/agb.html">AGB</a>
+      </li>
+      <li>
+            <a href="partials/datenschutz.html">Datenschutz</a>
+      </li>
+      <li>
+          <a href="partials/datenschutzeinstellungen.html">Dateneinstellung</a>
+      </li>
+   </ul>
+</nav>
+
+<h1>
+  Finde noch mehr Inspiration 
+</h1>
+
+<h1>
+  Nach oben ⇧
+</h1>
 </html>

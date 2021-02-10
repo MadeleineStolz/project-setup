@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -38,11 +39,15 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
+        type: 'asset/resource'
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Desgin System",
+      title: "Design System",
       template: "src/design-system.html",
       filename: "design-system.html",
     }),
@@ -51,6 +56,14 @@ module.exports = {
       template: "src/index.html",
       filename: "index.html",
     }),
+    new HtmlWebpackPlugin({
+      title: "about",
+      template: "src/partials/about.html",
+      filename: "about.html",
+    }),
+    new CopyWebpackPlugin({
+      patterns:[{from:"src/images",to:"images"}]
+    })
   ],
   devServer: {
     contentBase: path.join(__dirname, "dist"),

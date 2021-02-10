@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <header>
     <meta charset="utf-8" />
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="stylesheet" href="index.css" />
-  </head>
+  </header>
   <body>
+    <details open>
+      <summary>Header Partial</summary>
+      <%= require('html-loader!./partials/header.html') %>
+    </details>
     <details>
-      <summary>Example Partial</summary>
-      <%= require('html-loader!./partials/example.html') %>
+      <summary>Body Partial</summary>
+      <%= require('html-loader!./partials/body.html') %>
+    </details>
+    <details>
+      <summary>Footer Partial</summary>
+      <%= require('html-loader!./partials/footer.html') %>
+    </details>
+    <details>
+      <summary>Impressum Partial</summary>
+      <%= require('html-loader!./partials/impressum.html') %>
+    </details>
+    <details>
+      <summary>AGB Partial</summary>
+      <%= require('html-loader!./partials/agb.html') %>
+    </details>
+    <details>
+      <summary>Datenschutz Partial</summary>
+      <%= require('html-loader!./partials/datenschutz.html') %>
     </details>
   </body>
 </html>

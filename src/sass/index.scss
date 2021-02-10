@@ -1,1 +1,22 @@
-@import "./partials/example";
+//Grundaufbau Partials//
+@import "./partials/header.scss";
+@import "./partials/footer.scss";
+@import "./partials/body.scss";
+
+//Tokens & Units// 
+@import "./colors.scss";
+@import "./fonts.scss";
+@import "./units.scss";
+
+//Stylesheet// 
+@import "./stylesheet.scss";
+
+//Verlinkungen Header//
+@import "./partials/about.scss";
+@import "./partials/work.scss";
+@import "./partials/contact.scss";
+
+//Verlinkungen Footer//
+@import "./partials/impressum.scss";
+@import "./partials/agb.scss";
+@import "./partials/datenschutz.scss"; 

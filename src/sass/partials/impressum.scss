@@ -1,0 +1,17 @@
+.m-impressum {
+    display: flex;
+    min-height: 100vh;
+    margin: 0 auto;
+    flex-direction: row;
+    background-color: gray;
+    text-align: left;
+}
+a {
+    transition: all 0.2s;
+    color:#012b0f;
+    text-decoration: none;
+
+    &:hover {
+        color: #8B008B; 
+    }
+}

@@ -1,9 +1,11 @@
+@import "./colors.scss";
+
 .m-footer {
         display: flex;
         min-height: 100vh;
         margin: 12px;
         flex-direction: column;
-        background-color: gray;
+        background-color: $t-color-background;
         text-align: center;
         }
         main { 
@@ -26,31 +28,40 @@
         
               a {
                   transition: all 0.2s;
-                  color: black;
+                  color: $t-color-black;
                   text-decoration: none;
         
                   &:hover {
-                      color: #2f4f4f; 
-                  }
-              }
+                      color: $t-color-primary; 
+                    }
+                }
+            }
+            }
+          .m-footer_oben {
+            a {
+                transition: all 0.2s;
+                color: $t-color-black;
+                text-decoration: none;
+      
+                &:hover {
+                    color: $t-color-primary; 
+                }
           }
         
           h1 {
               font-size: 48px;
               font-weight: 700;
-              color: black;
+              color: $t-color-black;
               font-family: "Times New Roman" 'Times New Roman', Times, serif;
-              background-color: gray;
+              background-color: $t-color-background;
               text-align: center;
           }
           h2 {
             font-size: 48px;
             font-weight: 400;
-            color: black;
+            color: $t-color-black;
             font-family: "Times New Roman" 'Times New Roman', Times, serif;
-            background-color: gray;
+            background-color: $t-color-background;
             text-align: right;
         }
 }
-    
-  

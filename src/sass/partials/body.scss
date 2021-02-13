@@ -1,11 +1,12 @@
+/*Ich kann nicht die Angaben $t-units/fonts, etc machen. Kriege dann eine Fehlermeldung. */
 .m-body {
     display: flex;
     min-height: 100vh;
     margin: 12px;
     flex-direction: column;
-    background-color: gray;
+    background-color: #6A6967;
     text-align: left;
-    }
+    
     main { 
         min-height: 5em;
         flex: 1;
@@ -17,6 +18,7 @@
         font-weight: normal;
         text-align: left;
         }
+
         .m-work{
             position: absolute;
             left: 0;
@@ -24,8 +26,9 @@
             font-weight: normal;
             text-align: left;
         }
+        
         .m-contact {
-            padding: 12px;
+            padding:12px;
             display: block;
             font-weight: normal;
             text-align: center;
@@ -36,27 +39,45 @@ h1 {
     font-size: 48px;
     font-weight: 700;
     color: black;
-    font-family: "Times New Roman" 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;; 
     background-color: gray;
     text-align: center;
     line-height: 0,5;
 }
 h2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 36px;
+    font-family: "Times New Roman", Times, serif;; 
+    font-size: 48px;
     font-weight: 400;
     font-style:normal;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     color: black;
 }
 
 h3 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 24px;
     font-weight: 200;
     font-style:normal;
     text-align: center;
     text-decoration: none;
     color: black;
-}    
+}   
+    ul {
+        display: inline-block;
+        li {
+            display:inline-block;
+        margin-right: 24px;
+
+            a {
+                transition: all 0.2s;
+                color: #8B008B;;
+                text-decoration: none;
+
+                &:hover {
+                    color: #2f4f4f; 
+                }
+            }
+        } 
+    } 
+}   

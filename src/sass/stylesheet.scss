@@ -3,71 +3,81 @@ body {
     min-height: 100vh;
     margin: 0 auto;
     flex-direction: column;
-    background-color: gray;
+    background-color: $t-color-background;
     text-align: center;
     min-height: 5em;
     flex: 1;
 
     h1 {
-        font-size: 48px;
+        font-family: $t-font-bold; 
+        font-size: $t-font-size-h1;
         font-weight: 700;
-        color: black;
-        font-family: "Times New Roman" 'Times New Roman', Times, serif;
-        background-color: gray;
-        text-align: center;
-        line-height: 0,5;
-    }
-    h2 {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 36px;
-        font-weight: 400;
-        font-style:normal;
+        font-style: bold;
         text-align: center;
         text-decoration: none;
-        color: black;
+        color: $t-color-black;
+    }
+    h2 {
+        font-family: $t-font-regular; 
+        font-size: $t-font-size-h2;
+        font-weight: 500;
+        font-style: normal;
+        text-align: center;
+        text-decoration: none;
+        color: $t-color-black;
     }
     
     h3 {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 24px;
-        font-weight: 200;
+        font-family: $t-font-regular;
+        font-size: $t-font-size-h3;
+        font-weight: 300;
         font-style:normal;
         text-align: center;
         text-decoration: none;
-        color: black;
+        color: $t-color-black;
     }   
-    h4{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 24px;
+    h4 {
+        font-family: $t-font-regular;
+        font-size: $t-font-size-h4;
         font-weight: 200;
-        font-style:normal;
-        text-align: center;
+        font-style: normal;
+        text-align: left;
         text-decoration: none;
-        color: black;
+        color: $t-color-black;
+        padding: $t-units-xs;
+    }
+    h5 {
+        font-family: $t-font-regular;
+        font-size: $t-font-size-h5;
+        font-weight: 450;
+        font-style: normal;
+        text-align: left;
+        text-decoration: none;
+        color: $t-color-black;
+        padding: $t-units-s;
     }
 
     //Header//
     .m-header {
         .m-header_logo {
             display: flex;
-            background-color: gray;
+            background-color: $t-color-background;
             position: absolute;
-            left: 0;
-            padding: 12px;
-            font-weight: normal;
-            text-align: center;
+           align-items: center;
         }
         .m-header-partial {
+            display: flex;
+            background-color: $t-color-background;
             position: absolute;
-            left: 0;
-            padding: 12px;
-            font-weight: normal;
-            text-align: left;
+            padding: $t-units-xs;
+            text-align: center;
         }
         .m-header_navigation {
-            padding: 12px;
-            display: block;
-            font-weight: normal;
+            font-family: $t-font-bold;
+            font-weight: 400;
+            background-color: $t-color-background;
+            padding: $t-units-xs;
+            position: absolute;
             text-align: center;
             flex-grow: 1;
         }
@@ -75,28 +85,23 @@ body {
     //Body//
     .m-body {
         .m-about {
-            position: flex;
-            background-color: gray;
+            position: fixed;
+            background-color: $t-color-background;
             left: 0;
-            padding: 12px;
+            padding: $t-units-xs;
             font-weight: normal;
-            text-align: left;
         }
         .m-work{
-            position: flex;
-            background-color: gray;
+            position: fixed;
+            background-color: $t-color-background;
             left: 0;
-            padding: 12px;
-            font-weight: normal;
-            text-align: left;
+            padding: $t-units-xs;
         }
         .m-contact {
-            position: flex;
-            background-color: gray;
+            position: fixed;
+            background-color: $t-color-background;
             left: 0;
-            padding: 12px;
-            font-weight: normal;
-            text-align: left;
+            padding: $t-units-xs;
         }
     }
 
@@ -104,23 +109,92 @@ body {
     .m-footer {
         display: flex;
         text-align: center;
-        background-color: gray;
-        padding: 12px;
+        background-color: $t-color-background;
+        padding: $t-units-xs;
     }
-    .m-footer_navigation {
-        padding: 12px;
-        display: block;
-        font-weight: normal;
-        text-align: center;
-        flex-grow: 1;
-    }
+        .m-footer_navigation {
+            padding: $t-units-xs;
+            display: block;
+            font-weight: normal;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .m-footer_oben {
+            padding: $t-units-xs;
+            display: block;
+            font-weight: normal;
+            text-align: center;
+            flex-grow: 1; 
+        }
         //Impressum//
         .m-impressum {
             display: flex;
             min-height: 100vh;
             margin: 0 auto;
             flex-direction: row;
-            background-color: gray;
+            background-color: $t-color-background;
             text-align: left;
         }
-}
+        .m-impressum_angaben {
+            display: flex;
+            min-height: 100vh;
+            margin: 0 auto;
+            flex-direction: row;
+            background-color: $t-color-background;
+            text-align: left;
+        }
+        //AGB//
+        .m-agb {
+            display: flex;
+            min-height: 100vh;
+            margin: 0 auto;
+            flex-direction: row;
+            background-color: $t-color-background;
+            text-align: left; 
+        }        
+        //Datenschutz//
+        .m-datenschutz {
+            display: flex;
+            min-height: 100vh;
+            margin: 0 auto;
+            flex-direction: column;
+            background-color: $t-color-background;
+            text-align: left;
+        }
+        //print//
+        .m-print {
+            display: flex;
+            min-height: 100vh;
+            margin: 0 auto;
+            flex-direction: column;
+            background-color: $t-color-background;
+            text-align: center;
+            color: $t-color-black;
+        }
+            //web//
+        .m-web {
+            display: flex;
+            min-height: 100vh;
+            margin: 0 auto;
+            flex-direction: column;
+            background-color: $t-color-background;
+            text-align: center;
+        }
+        .m-video {
+            display: flex;
+            min-height: 100vh;
+            margin: 0 auto;
+            flex-direction: column;
+            background-color: $t-color-background;
+            text-align: center;
+        }
+        .m-experimental {
+            display: flex;
+            min-height: 100vh;
+            margin: 0 auto;
+            flex-direction: column;
+            background-color: $t-color-background;
+            text-align: center;
+        }
+}       
+   

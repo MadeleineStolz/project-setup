@@ -1,0 +1,14 @@
+.m-experimental {
+    display: flex;
+    min-height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: $t-color-background;
+    text-align: center;
+    
+    main { 
+        min-height: 5em;
+        flex: 1;
+      
+    }
+}

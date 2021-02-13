@@ -1,0 +1,15 @@
+.m-web {
+    display: flex;
+    min-height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: $t-color-background;
+    text-align: center;
+    color: $t-color-black;
+    
+    main { 
+        min-height: 5em;
+        flex: 1;
+      
+    }
+}

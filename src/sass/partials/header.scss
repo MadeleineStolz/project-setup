@@ -1,3 +1,4 @@
+
 .m-header {
 display: flex;
 min-height: 100vh;
@@ -29,8 +30,8 @@ main {
         padding: 12px;
         display: block;
         font-weight: normal;
-        text-align: left;
-        flex-grow: 1;
+        text-align: center;
+        flex-grow: 2;
     }
 
     ul {
@@ -45,38 +46,9 @@ main {
             text-decoration: none;
 
             &:hover {
-                color: #8B008B; 
+                color: pink; 
             }
         }
         }
-    }
-
-    h1 {
-        font-size: 48px;
-        font-weight: 400;
-        color: black;
-        font-family: "Times New Roman" 'Times New Roman', Times, serif;
-        background-color: gray;
-        text-align: center;
-        line-height: 0,5;
-    }
-    h2 {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 36px;
-        font-weight: 400;
-        font-style:normal;
-        text-align: center;
-        text-decoration: none;
-        color: black;
-    }
-    
-    h3 {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 24px;
-        font-weight: 200;
-        font-style:normal;
-        text-align: center;
-        text-decoration: none;
-        color: black;
-    }    
+    }  
 }

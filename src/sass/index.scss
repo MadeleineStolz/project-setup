@@ -11,12 +11,12 @@
 //Stylesheet// 
 @import "./stylesheet.scss";
 
-//Verlinkungen Header//
-@import "./partials/about.scss";
-@import "./partials/work.scss";
-@import "./partials/contact.scss";
-
 //Verlinkungen Footer//
 @import "./partials/impressum.scss";
 @import "./partials/agb.scss";
-@import "./partials/datenschutz.scss"; 
+@import "./partials/datenschutz.scss";
+
+@import "./partials/print.scss";
+@import "./partials/web.scss";
+@import "./partials/video.scss";
+@import "./partials/experimental.scss";

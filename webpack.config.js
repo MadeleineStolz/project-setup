@@ -56,11 +56,6 @@ module.exports = {
       template: "src/index.html",
       filename: "index.html",
     }),
-    new HtmlWebpackPlugin({
-      title: "about",
-      template: "src/partials/about.html",
-      filename: "about.html",
-    }),
     new CopyWebpackPlugin({
       patterns:[{from:"src/images",to:"images"}]
     })

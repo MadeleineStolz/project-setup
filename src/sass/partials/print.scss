@@ -1,17 +1,9 @@
-.m-impressum {
+.m-print {
     display: flex;
     min-height: 100vh;
     margin: 0 auto;
     flex-direction: row;
     background-color: $t-color-background;
     text-align: left;
-}
-a {
-    transition: all 0.2s;
-    color: $t-color-primary;
-    text-decoration: none;
-
-    &:hover {
-        color: $t-color-secundary; 
     }
-}
+  
